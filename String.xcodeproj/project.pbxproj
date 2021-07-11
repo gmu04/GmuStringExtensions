@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F75210B82699A1C50056350A /* String.h in Headers */ = {isa = PBXBuildFile; fileRef = F75210B62699A1C50056350A /* String.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F75210BF2699A2720056350A /* String + subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210BE2699A2720056350A /* String + subscript.swift */; };
+		F75210BF2699A2720056350A /* String + substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210BE2699A2720056350A /* String + substring.swift */; };
 		F75210C72699A2C20056350A /* SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210C62699A2C20056350A /* SubscriptTests.swift */; };
 		F75210C92699A2C20056350A /* String.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75210B32699A1C50056350A /* String.framework */; };
 		F75210D02699B4360056350A /* String + email.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210CF2699B4360056350A /* String + email.swift */; };
@@ -30,7 +30,7 @@
 		F75210B32699A1C50056350A /* String.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = String.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75210B62699A1C50056350A /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
 		F75210B72699A1C50056350A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F75210BE2699A2720056350A /* String + subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + subscript.swift"; sourceTree = "<group>"; };
+		F75210BE2699A2720056350A /* String + substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + substring.swift"; sourceTree = "<group>"; };
 		F75210C42699A2C20056350A /* StringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75210C62699A2C20056350A /* SubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptTests.swift; sourceTree = "<group>"; };
 		F75210C82699A2C20056350A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			children = (
 				F75210B62699A1C50056350A /* String.h */,
 				F75210B72699A1C50056350A /* Info.plist */,
-				F75210BE2699A2720056350A /* String + subscript.swift */,
+				F75210BE2699A2720056350A /* String + substring.swift */,
 				F75210CF2699B4360056350A /* String + email.swift */,
 				F75210D12699B4EF0056350A /* String + any.swift */,
 			);
@@ -208,7 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F75210D02699B4360056350A /* String + email.swift in Sources */,
-				F75210BF2699A2720056350A /* String + subscript.swift in Sources */,
+				F75210BF2699A2720056350A /* String + substring.swift in Sources */,
 				F75210D22699B4EF0056350A /* String + any.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -343,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -373,7 +373,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.String;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.framework.String;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -400,7 +400,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.String;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.framework.String;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
