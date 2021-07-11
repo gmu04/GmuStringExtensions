@@ -1,2 +1,2 @@
 
-I will be keeping String extensions or String related functions in this framework project.
+String extensions and/or "string" related functions/code snippets are included in this framework.
