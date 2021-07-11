@@ -12,14 +12,8 @@ import Foundation
  */
 extension String {
     
-    /**
-     
-     string[0 ..< 5]
-     
-     - parameter bounds: range like 0 ..< 5
-     - returns: String?
-     */
-    public subscript (bounds: CountableRange<Int>) -> String?{
+    /// string[0 ..< 5]
+    public func substring(_ bounds: Range<Int>) -> String?{
         guard bounds.lowerBound >= 0,
               self.count >= bounds.upperBound else { return nil }
         
@@ -28,14 +22,8 @@ extension String {
         return String(self[start..<end])
     }
     
-    /**
-  
-     string[0 ... 5]
-     
-     - parameter bounds: range like 0 ... 5
-     - returns: String?
-     */
-    public subscript (bounds: CountableClosedRange<Int>) -> String?{
+    /// string[0 ... 5]
+    public func substring(_ bounds: ClosedRange<Int>) -> String?{
         guard bounds.lowerBound >= 0,
               self.count > bounds.upperBound else { return nil }
         
@@ -44,28 +32,16 @@ extension String {
         return String(self[start...end])
     }
     
-    /**
-     
-     string[..< 5]
-     
-     - parameter bounds: range like  ..< 5
-     - returns: String?
-     */
-    public subscript (bounds: PartialRangeUpTo<Int>) -> String?{
+    /// string[ ..< 5 ]
+    public func substring(_ bounds: PartialRangeUpTo<Int>) -> String?{
         guard self.count >= bounds.upperBound else { return nil }
         
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return String(self[startIndex..<end])
     }
     
-    /**
-     
-     string[...5]
-     
-     - parameter bounds: range like  ... 5
-     - returns: String?
-     */
-    public subscript (bounds: PartialRangeThrough<Int>) -> String?{
+    /// string[ ...5 ]
+    public func substring(_ bounds: PartialRangeThrough<Int>) -> String?{
         guard self.count > bounds.upperBound else { return nil }
         
         let end = index(startIndex, offsetBy: bounds.upperBound)
@@ -73,14 +49,8 @@ extension String {
     }
     
     
-    /**
-     
-     string[5...]
-     
-     - parameter bounds: range like  5 ...
-     - returns: String?
-     */
-    public subscript (bounds: CountablePartialRangeFrom<Int>) -> String?{
+    /// string[5...]
+    public func substring(_ bounds: CountablePartialRangeFrom<Int>) -> String?{
         guard bounds.lowerBound >= 0,
               bounds.lowerBound < self.count else { return nil }
         
@@ -91,11 +61,8 @@ extension String {
     
     
     /**
-     
      string[5]
-     
      - parameter i: character index
-     - returns: String?
      */
     public subscript (i: Int) -> String? {
         guard i >= 0, i < self.count else { return nil }

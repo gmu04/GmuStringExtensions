@@ -25,71 +25,71 @@ class SubscriptTests: XCTestCase {
     
     
     /// string[0..<5]
-    func test_Subscript_CountableRange() throws {
-        result = gokhanmutlu[0..<6]
+    func test_substring_CountableRange() throws {
+        result = gokhanmutlu.substring(0..<6)
         XCTAssertEqual("gokhan", result!)
         
-        result = gokhanmutlu[-1..<1]
+        result = gokhanmutlu.substring(-1..<1)
         XCTAssertEqual(nil, result)
 
-        result = gokhanmutlu[0..<(gokhanmutlu.count+1)]
+        result = gokhanmutlu.substring(0..<(gokhanmutlu.count+1))
         XCTAssertEqual(nil, result)
     }
 
     /// string[0...5]
-    func test_Subscript_CountableClosedRange() throws {
-        result = gokhanmutlu[0...5]
+    func test_substring_CountableClosedRange() throws {
+        result = gokhanmutlu.substring(0...5)
         XCTAssertEqual("gokhan", result)
         
-        result = gokhanmutlu[-1...1]
+        result = gokhanmutlu.substring(-1...1)
         XCTAssertEqual(nil, result)
         
-        result = gokhanmutlu[0...(gokhanmutlu.count+1)]
+        result = gokhanmutlu.substring(0...(gokhanmutlu.count+1))
         XCTAssertEqual(nil, result)
     }
 
 
     /// string[..<6]
-    func test_Subscript_PartialRangeUpTo() throws {
-        result = gokhanmutlu[..<6]
+    func test_substring_PartialRangeUpTo() throws {
+        result = gokhanmutlu.substring(..<6)
         XCTAssertEqual("gokhan", result)
         
-        result = gokhanmutlu[0..<(gokhanmutlu.count+1)]
+        result = gokhanmutlu.substring(..<(gokhanmutlu.count+1))
         XCTAssertEqual(nil, result)
     }
 
     
 
     /// string[...5]
-    func test_Subscript_PartialRangeThrough() throws {
-        result = gokhanmutlu[...5]
+    func test_substring_PartialRangeThrough() throws {
+        result = gokhanmutlu.substring(...5)
         XCTAssertEqual("gokhan", result)
         
-        result = gokhanmutlu[0...gokhanmutlu.count]
+        result = gokhanmutlu.substring(...gokhanmutlu.count)
         XCTAssertEqual(nil, result)
     }
 
     
     /// string[6...]
-    func test_Subscript_CountablePartialRangeFrom() throws {
-        result = gokhanmutlu[6...]
+    func test_substring_CountablePartialRangeFrom() throws {
+        result = gokhanmutlu.substring(6...)
         XCTAssertEqual("mutlu", result)
         
-        result = gokhanmutlu[(gokhanmutlu.count-1)...]
+        result = gokhanmutlu.substring((gokhanmutlu.count-1)...)
         XCTAssertEqual("u", result)
 
         result = gokhanmutlu[-1]
         XCTAssertEqual(nil, result)
 
-        result = gokhanmutlu[(gokhanmutlu.count)...]
+        result = gokhanmutlu.substring((gokhanmutlu.count)...)
         XCTAssertEqual(nil, result)
 
-        result = gokhanmutlu[(gokhanmutlu.count+1)...]
+        result = gokhanmutlu.substring((gokhanmutlu.count+1)...)
         XCTAssertEqual(nil, result)
     }
     
     /// string[5]
-    func test_Subscript() throws {
+    func test_substring() throws {
         result = gokhanmutlu[1]
         XCTAssertEqual("o", result)
         
