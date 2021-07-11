@@ -1,2 +1,2 @@
 
-I will be gathering useful code snippets (String extensions) here.s
+I will be gathering useful code snippets (String extensions) here.
