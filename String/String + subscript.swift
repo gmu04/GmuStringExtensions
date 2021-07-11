@@ -8,7 +8,7 @@
 import Foundation
 
 /**
- Integer Subscripts
+ Integer substrings & subscripts
  */
 extension String {
     
