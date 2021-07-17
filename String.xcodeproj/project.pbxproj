@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F75210B82699A1C50056350A /* String.h in Headers */ = {isa = PBXBuildFile; fileRef = F75210B62699A1C50056350A /* String.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F75210BF2699A2720056350A /* String + substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210BE2699A2720056350A /* String + substring.swift */; };
 		F75210C72699A2C20056350A /* SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210C62699A2C20056350A /* SubscriptTests.swift */; };
 		F75210C92699A2C20056350A /* String.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75210B32699A1C50056350A /* String.framework */; };
@@ -28,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		F75210B32699A1C50056350A /* String.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = String.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F75210B62699A1C50056350A /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
 		F75210B72699A1C50056350A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F75210BE2699A2720056350A /* String + substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + substring.swift"; sourceTree = "<group>"; };
 		F75210C42699A2C20056350A /* StringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 		F75210B52699A1C50056350A /* String */ = {
 			isa = PBXGroup;
 			children = (
-				F75210B62699A1C50056350A /* String.h */,
 				F75210B72699A1C50056350A /* Info.plist */,
 				F75210BE2699A2720056350A /* String + substring.swift */,
 				F75210CF2699B4360056350A /* String + email.swift */,
@@ -105,7 +102,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75210B82699A1C50056350A /* String.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
