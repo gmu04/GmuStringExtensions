@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7087D5E26AE796900359C92 /* ?=.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7087D5D26AE796900359C92 /* ?=.swift */; };
+		F7087D9726B114AC00359C92 /* OperatorOverloadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7087D9626B114AC00359C92 /* OperatorOverloadingTests.swift */; };
 		F75210BF2699A2720056350A /* String + substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210BE2699A2720056350A /* String + substring.swift */; };
 		F75210C72699A2C20056350A /* SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210C62699A2C20056350A /* SubscriptTests.swift */; };
 		F75210C92699A2C20056350A /* String.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75210B32699A1C50056350A /* String.framework */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7087D5D26AE796900359C92 /* ?=.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "?=.swift"; sourceTree = "<group>"; };
+		F7087D9626B114AC00359C92 /* OperatorOverloadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorOverloadingTests.swift; sourceTree = "<group>"; };
 		F75210B32699A1C50056350A /* String.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = String.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75210B72699A1C50056350A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F75210BE2699A2720056350A /* String + substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + substring.swift"; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 				F75210BE2699A2720056350A /* String + substring.swift */,
 				F75210CF2699B4360056350A /* String + email.swift */,
 				F75210D12699B4EF0056350A /* String + any.swift */,
+				F7087D5D26AE796900359C92 /* ?=.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 			children = (
 				F75210C62699A2C20056350A /* SubscriptTests.swift */,
 				F75210D32699B59E0056350A /* StringTests.swift */,
+				F7087D9626B114AC00359C92 /* OperatorOverloadingTests.swift */,
 				F75210C82699A2C20056350A /* Info.plist */,
 			);
 			path = StringTests;
@@ -205,6 +211,7 @@
 			files = (
 				F75210D02699B4360056350A /* String + email.swift in Sources */,
 				F75210BF2699A2720056350A /* String + substring.swift in Sources */,
+				F7087D5E26AE796900359C92 /* ?=.swift in Sources */,
 				F75210D22699B4EF0056350A /* String + any.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7087D9726B114AC00359C92 /* OperatorOverloadingTests.swift in Sources */,
 				F75210D42699B59E0056350A /* StringTests.swift in Sources */,
 				F75210C72699A2C20056350A /* SubscriptTests.swift in Sources */,
 			);
@@ -369,6 +377,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.framework.String;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -396,6 +405,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.framework.String;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
