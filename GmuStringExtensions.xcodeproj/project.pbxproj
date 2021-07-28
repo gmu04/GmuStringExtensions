@@ -11,7 +11,7 @@
 		F7087D9726B114AC00359C92 /* OperatorOverloadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7087D9626B114AC00359C92 /* OperatorOverloadingTests.swift */; };
 		F75210BF2699A2720056350A /* String + substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210BE2699A2720056350A /* String + substring.swift */; };
 		F75210C72699A2C20056350A /* SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210C62699A2C20056350A /* SubscriptTests.swift */; };
-		F75210C92699A2C20056350A /* String.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75210B32699A1C50056350A /* String.framework */; };
+		F75210C92699A2C20056350A /* GmuStringExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75210B32699A1C50056350A /* GmuStringExtensions.framework */; };
 		F75210D02699B4360056350A /* String + email.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210CF2699B4360056350A /* String + email.swift */; };
 		F75210D22699B4EF0056350A /* String + any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210D12699B4EF0056350A /* String + any.swift */; };
 		F75210D42699B59E0056350A /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210D32699B59E0056350A /* StringTests.swift */; };
@@ -30,10 +30,10 @@
 /* Begin PBXFileReference section */
 		F7087D5D26AE796900359C92 /* ?=.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "?=.swift"; sourceTree = "<group>"; };
 		F7087D9626B114AC00359C92 /* OperatorOverloadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorOverloadingTests.swift; sourceTree = "<group>"; };
-		F75210B32699A1C50056350A /* String.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = String.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75210B32699A1C50056350A /* GmuStringExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GmuStringExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75210B72699A1C50056350A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F75210BE2699A2720056350A /* String + substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + substring.swift"; sourceTree = "<group>"; };
-		F75210C42699A2C20056350A /* StringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75210C42699A2C20056350A /* GmuStringExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GmuStringExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75210C62699A2C20056350A /* SubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptTests.swift; sourceTree = "<group>"; };
 		F75210C82699A2C20056350A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F75210CF2699B4360056350A /* String + email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + email.swift"; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75210C92699A2C20056350A /* String.framework in Frameworks */,
+				F75210C92699A2C20056350A /* GmuStringExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +63,8 @@
 		F75210A92699A1C50056350A = {
 			isa = PBXGroup;
 			children = (
-				F75210B52699A1C50056350A /* String */,
-				F75210C52699A2C20056350A /* StringTests */,
+				F75210B52699A1C50056350A /* GmuStringExtensions */,
+				F75210C52699A2C20056350A /* GmuStringExtensionsTests */,
 				F75210B42699A1C50056350A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,13 +72,13 @@
 		F75210B42699A1C50056350A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F75210B32699A1C50056350A /* String.framework */,
-				F75210C42699A2C20056350A /* StringTests.xctest */,
+				F75210B32699A1C50056350A /* GmuStringExtensions.framework */,
+				F75210C42699A2C20056350A /* GmuStringExtensionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F75210B52699A1C50056350A /* String */ = {
+		F75210B52699A1C50056350A /* GmuStringExtensions */ = {
 			isa = PBXGroup;
 			children = (
 				F75210B72699A1C50056350A /* Info.plist */,
@@ -87,10 +87,10 @@
 				F75210D12699B4EF0056350A /* String + any.swift */,
 				F7087D5D26AE796900359C92 /* ?=.swift */,
 			);
-			path = String;
+			path = GmuStringExtensions;
 			sourceTree = "<group>";
 		};
-		F75210C52699A2C20056350A /* StringTests */ = {
+		F75210C52699A2C20056350A /* GmuStringExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
 				F75210C62699A2C20056350A /* SubscriptTests.swift */,
@@ -98,7 +98,7 @@
 				F7087D9626B114AC00359C92 /* OperatorOverloadingTests.swift */,
 				F75210C82699A2C20056350A /* Info.plist */,
 			);
-			path = StringTests;
+			path = GmuStringExtensionsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,9 +114,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F75210B22699A1C50056350A /* String */ = {
+		F75210B22699A1C50056350A /* GmuStringExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F75210BB2699A1C50056350A /* Build configuration list for PBXNativeTarget "String" */;
+			buildConfigurationList = F75210BB2699A1C50056350A /* Build configuration list for PBXNativeTarget "GmuStringExtensions" */;
 			buildPhases = (
 				F75210AE2699A1C50056350A /* Headers */,
 				F75210AF2699A1C50056350A /* Sources */,
@@ -127,14 +127,14 @@
 			);
 			dependencies = (
 			);
-			name = String;
+			name = GmuStringExtensions;
 			productName = String;
-			productReference = F75210B32699A1C50056350A /* String.framework */;
+			productReference = F75210B32699A1C50056350A /* GmuStringExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F75210C32699A2C20056350A /* StringTests */ = {
+		F75210C32699A2C20056350A /* GmuStringExtensionsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F75210CC2699A2C20056350A /* Build configuration list for PBXNativeTarget "StringTests" */;
+			buildConfigurationList = F75210CC2699A2C20056350A /* Build configuration list for PBXNativeTarget "GmuStringExtensionsTests" */;
 			buildPhases = (
 				F75210C02699A2C20056350A /* Sources */,
 				F75210C12699A2C20056350A /* Frameworks */,
@@ -145,9 +145,9 @@
 			dependencies = (
 				F75210CB2699A2C20056350A /* PBXTargetDependency */,
 			);
-			name = StringTests;
+			name = GmuStringExtensionsTests;
 			productName = StringTests;
-			productReference = F75210C42699A2C20056350A /* StringTests.xctest */;
+			productReference = F75210C42699A2C20056350A /* GmuStringExtensionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F75210AD2699A1C50056350A /* Build configuration list for PBXProject "String" */;
+			buildConfigurationList = F75210AD2699A1C50056350A /* Build configuration list for PBXProject "GmuStringExtensions" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F75210B22699A1C50056350A /* String */,
-				F75210C32699A2C20056350A /* StringTests */,
+				F75210B22699A1C50056350A /* GmuStringExtensions */,
+				F75210C32699A2C20056350A /* GmuStringExtensionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +231,7 @@
 /* Begin PBXTargetDependency section */
 		F75210CB2699A2C20056350A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F75210B22699A1C50056350A /* String */;
+			target = F75210B22699A1C50056350A /* GmuStringExtensions */;
 			targetProxy = F75210CA2699A2C20056350A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -370,7 +370,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = String/Info.plist;
+				INFOPLIST_FILE = GmuStringExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,7 +378,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.framework.String;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.framework.GmuStringExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -398,7 +398,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = String/Info.plist;
+				INFOPLIST_FILE = GmuStringExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -406,7 +406,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.framework.String;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.framework.GmuStringExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -420,7 +420,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85373584HZ;
-				INFOPLIST_FILE = StringTests/Info.plist;
+				INFOPLIST_FILE = GmuStringExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,7 +439,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85373584HZ;
-				INFOPLIST_FILE = StringTests/Info.plist;
+				INFOPLIST_FILE = GmuStringExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +455,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F75210AD2699A1C50056350A /* Build configuration list for PBXProject "String" */ = {
+		F75210AD2699A1C50056350A /* Build configuration list for PBXProject "GmuStringExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F75210B92699A1C50056350A /* Debug */,
@@ -464,7 +464,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F75210BB2699A1C50056350A /* Build configuration list for PBXNativeTarget "String" */ = {
+		F75210BB2699A1C50056350A /* Build configuration list for PBXNativeTarget "GmuStringExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F75210BC2699A1C50056350A /* Debug */,
@@ -473,7 +473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F75210CC2699A2C20056350A /* Build configuration list for PBXNativeTarget "StringTests" */ = {
+		F75210CC2699A2C20056350A /* Build configuration list for PBXNativeTarget "GmuStringExtensionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F75210CD2699A2C20056350A /* Debug */,
