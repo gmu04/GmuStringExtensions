@@ -8,7 +8,7 @@
 import Foundation
 
 /**
- setDefaultIfNilOrEmptyOperator
+ Operator "setDefaultIfNilOrEmpty"
  set left side value to the default value (right side),  if it is nil or empty
  */
 infix operator ?=
