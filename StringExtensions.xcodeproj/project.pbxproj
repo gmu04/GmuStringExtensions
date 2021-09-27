@@ -15,6 +15,7 @@
 		F75210D02699B4360056350A /* String + email.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210CF2699B4360056350A /* String + email.swift */; };
 		F75210D22699B4EF0056350A /* String + any.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210D12699B4EF0056350A /* String + any.swift */; };
 		F75210D42699B59E0056350A /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75210D32699B59E0056350A /* StringTests.swift */; };
+		F7C3B0E32701827A00A9E37D /* String + base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C3B0E22701827A00A9E37D /* String + base64.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		F75210CF2699B4360056350A /* String + email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + email.swift"; sourceTree = "<group>"; };
 		F75210D12699B4EF0056350A /* String + any.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + any.swift"; sourceTree = "<group>"; };
 		F75210D32699B59E0056350A /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		F7C3B0E22701827A00A9E37D /* String + base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + base64.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F75210CF2699B4360056350A /* String + email.swift */,
 				F75210D12699B4EF0056350A /* String + any.swift */,
 				F7087D5D26AE796900359C92 /* ?=.swift */,
+				F7C3B0E22701827A00A9E37D /* String + base64.swift */,
 			);
 			path = StringExtensions;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				F75210D02699B4360056350A /* String + email.swift in Sources */,
 				F75210BF2699A2720056350A /* String + substring.swift in Sources */,
 				F7087D5E26AE796900359C92 /* ?=.swift in Sources */,
+				F7C3B0E32701827A00A9E37D /* String + base64.swift in Sources */,
 				F75210D22699B4EF0056350A /* String + any.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
